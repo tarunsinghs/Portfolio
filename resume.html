@@ -77,19 +77,19 @@ footer {
 }
 
 .sidebar {
-  height: 100%;
   width: 250px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
-  overflow-x: hidden;
+  /* overflow: hidden; */
   padding: 5px;
 }
 .main {
   margin-left: 250px; /* Same as the width of the sidenav */
   padding: 0px 10px;
+  /* position:relative; */
 }
 
 .dot {
@@ -103,6 +103,89 @@ footer {
 .blacktext {
 color : #F9FBE7;
 }
+  /* Apply css properties to h1 element */
+  h1 {
+            text-align: center;
+        }
+  
+        /* Create a container using CSS properties */
+        .container {
+            top: 67%;
+            left: 28%;
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            width:100%;
+        }
+
+        .educationcontainer {
+            top: 77%;
+            left: 28%;
+            position: absolute;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            width:100%;
+        }
+  
+        /* Apply CSS properties to ui-widgets class */
+        .ui-widgets {
+            position: relative;
+            /*display: inline-block;*/
+            width: 5rem;
+            height: 5rem;
+            border-radius: 9rem;
+            margin: 1.5rem;
+            border: 1.2rem solid palegreen;
+            box-shadow: inset 0 0 7px grey;
+            border-left-color: palegreen;
+            border-top-color: chartreuse;
+            border-right-color: darkgreen;
+            border-bottom-color: white;
+            text-align: center;
+            box-sizing: border-box;
+        }
+  
+        /*  Apply css properties to the second 
+            child of ui-widgets class */
+        .ui-widgets:nth-child(2) {
+            border-top-color: chartreuse;
+            /* border-right-color: white; */
+            border-left-color: palegreen;
+            border-bottom-color: white;
+        }
+
+        .ui-widgets:nth-child(4) {
+            border-top-color: chartreuse;
+             border-right-color: white; 
+            border-left-color: palegreen;
+            border-bottom-color: white;
+        }
+  
+        /*  Apply css properties to ui-widgets class 
+            and ui-values class*/
+        .ui-widgets .ui-values {
+            top: 40px;
+            position: absolute;
+            left: 10px;
+            right: 0;
+            font-weight: 700;
+            font-size: 2.0rem;
+  
+        }
+  
+        /*  Apply css properties to ui-widgets 
+            class and ui-labels class*/
+        .ui-widgets .ui-labels {
+  
+            left: 0;
+            bottom: -16px;
+            text-shadow: 0 0 4px grey;
+            color: black;
+            position: absolute;
+            width: 60%;
+            font-size: 16px;
+        }
+
 </style>
 </head>
 <body>
@@ -121,16 +204,55 @@ color : #F9FBE7;
    <p style="text-align:left;padding-left: 20px;"> tarun.sep98@gmail.com</p>
    <p style="text-align:left;padding-left: 20px;">+91 9629994511 </p><br>
 
-   <h4 style="text-align:left;padding-left: 20px;">SKILLS</h4>
-   <hr style="width:100%;margin-left:0"></hr>
+   <div class="container;">
+    <h3 style="text-align:left;margin-top: 20px;">SKILLS</h3>
+    <hr style="width:100%;"></hr>
+    <!-- Creating a ui-widgets classes that 
+        store other useful classes like 
+        ui-values and ui-labels -->
+    <div class="ui-widgets">
+        
+        <div class="ui-labels">Java</div>
+    </div>
 
+    <div class="ui-widgets">
+      
+        <div class="ui-labels">HTML</div>
+    </div>
+    <div class="ui-widgets">
+      
+      <div class="ui-labels">Python</div>
+  </div>
+  <div class="ui-widgets">
+      
+    <div class="ui-labels">React</div>
+</div>
+</div>
+<div class="educationcontainer;">
+  <h2 style="text-align:left;margin-top: 20px;">Education</h2>
+  <hr style="width:100%;"></hr>
 
+  <h3><b>Degree BTech/CSE </b></h3>
+  <p>Anna University, Chennai</p>
+<p>2015-2019</p>
+<br>
+<h3><b>Work Experience </b></h3>
+  <p>Cognizant</p>
+<p>2019-2021</p>
+<br>
+<h3><b>Degree MTech/CSE </b></h3>
+  <p>SRM University, Chennai</p>
+<p>2021-2023</p>
+</div>
 
 
 
 </div>
 
-
+<div class="educationcontainer;">
+  <h2 style="text-align:left;margin-top: 20px;">Awards</h2>
+  <hr style="width:100%;"></hr>
+</div>
 
 
 </div>
